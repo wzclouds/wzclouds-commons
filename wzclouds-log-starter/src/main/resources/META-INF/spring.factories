@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.github.wzclouds.log.LogAutoConfiguration
+org.springframework.context.ApplicationContextInitializer=\
+    com.github.wzclouds.log.MyMDCAdapterInitializer
