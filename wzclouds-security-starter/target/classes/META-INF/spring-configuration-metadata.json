@@ -1,0 +1,25 @@
+{
+  "groups": [
+    {
+      "name": "wzclouds.security",
+      "type": "com.github.wzclouds.security.properties.SecurityProperties",
+      "sourceType": "com.github.wzclouds.security.properties.SecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wzclouds.security.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用uri权限",
+      "sourceType": "com.github.wzclouds.security.properties.SecurityProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "wzclouds.security.type",
+      "type": "com.github.wzclouds.security.properties.UserType",
+      "description": "查询用户信息的调用方式",
+      "sourceType": "com.github.wzclouds.security.properties.SecurityProperties"
+    }
+  ],
+  "hints": []
+}

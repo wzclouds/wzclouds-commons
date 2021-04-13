@@ -1,0 +1,6 @@
+com.github.wzclouds.injection
+com.github.wzclouds.injection.annonation
+com.github.wzclouds.injection.aspect
+com.github.wzclouds.injection.core
+com.github.wzclouds.injection.mybatis.typehandler
+com.github.wzclouds.injection.properties

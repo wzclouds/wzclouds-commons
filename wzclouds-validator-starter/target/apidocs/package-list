@@ -1,0 +1,9 @@
+com.github.wzclouds.validator.annotation
+com.github.wzclouds.validator.config
+com.github.wzclouds.validator.constraintvalidators
+com.github.wzclouds.validator.controller
+com.github.wzclouds.validator.extract
+com.github.wzclouds.validator.mateconstraint
+com.github.wzclouds.validator.mateconstraint.impl
+com.github.wzclouds.validator.model
+com.github.wzclouds.validator.wrapper

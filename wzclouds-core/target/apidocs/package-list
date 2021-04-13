@@ -1,0 +1,14 @@
+com.github.wzclouds.base
+com.github.wzclouds.base.entity
+com.github.wzclouds.base.validation
+com.github.wzclouds.context
+com.github.wzclouds.converter
+com.github.wzclouds.exception
+com.github.wzclouds.exception.code
+com.github.wzclouds.function
+com.github.wzclouds.jackson
+com.github.wzclouds.lock
+com.github.wzclouds.log.annotation
+com.github.wzclouds.model
+com.github.wzclouds.security.annotation
+com.github.wzclouds.utils

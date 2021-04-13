@@ -1,0 +1,7 @@
+com.github.wzclouds.cloud
+com.github.wzclouds.cloud.feign
+com.github.wzclouds.cloud.http
+com.github.wzclouds.cloud.hystrix
+com.github.wzclouds.cloud.interceptor
+com.github.wzclouds.cloud.ribbon
+org.springframework.cloud.openfeign

@@ -1,0 +1,7 @@
+com\github\wzclouds\jwt\model\AuthInfo.class
+com\github\wzclouds\jwt\JwtConfiguration.class
+com\github\wzclouds\jwt\model\JwtUserInfo.class
+com\github\wzclouds\jwt\TokenUtil.class
+com\github\wzclouds\jwt\utils\JwtUtil.class
+com\github\wzclouds\jwt\model\Token.class
+com\github\wzclouds\jwt\JwtProperties.class

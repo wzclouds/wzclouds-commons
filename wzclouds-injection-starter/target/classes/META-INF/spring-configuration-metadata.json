@@ -1,0 +1,80 @@
+{
+  "groups": [
+    {
+      "name": "wzclouds.injection",
+      "type": "com.github.wzclouds.injection.properties.InjectionProperties",
+      "sourceType": "com.github.wzclouds.injection.properties.InjectionProperties"
+    },
+    {
+      "name": "wzclouds.injection.guava-cache",
+      "type": "com.github.wzclouds.injection.properties.InjectionProperties$GuavaCache",
+      "sourceType": "com.github.wzclouds.injection.properties.InjectionProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wzclouds.injection.aop-enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用aop注解方式",
+      "sourceType": "com.github.wzclouds.injection.properties.InjectionProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "wzclouds.injection.dict-item-separator",
+      "type": "java.lang.String",
+      "description": "多个字典code 之间的的分隔符",
+      "sourceType": "com.github.wzclouds.injection.properties.InjectionProperties",
+      "defaultValue": ","
+    },
+    {
+      "name": "wzclouds.injection.dict-separator",
+      "type": "java.lang.String",
+      "description": "字典类型 和 code 的分隔符",
+      "sourceType": "com.github.wzclouds.injection.properties.InjectionProperties",
+      "defaultValue": "###"
+    },
+    {
+      "name": "wzclouds.injection.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用远程查询",
+      "sourceType": "com.github.wzclouds.injection.properties.InjectionProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "wzclouds.injection.guava-cache.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用本地缓存 <p> 注意：本地缓存开启后，会存在短暂的数据不一致情况(由guavaCacheRefreshWriteTime决定)， 所以对数据正确性有要求的项目建议禁用，然后在@RemoteField.method 方法上执行添加redis等缓存！",
+      "sourceType": "com.github.wzclouds.injection.properties.InjectionProperties$GuavaCache",
+      "defaultValue": true
+    },
+    {
+      "name": "wzclouds.injection.guava-cache.maximum-size",
+      "type": "java.lang.Integer",
+      "description": "guava缓存的 最大数",
+      "sourceType": "com.github.wzclouds.injection.properties.InjectionProperties$GuavaCache",
+      "defaultValue": 1000
+    },
+    {
+      "name": "wzclouds.injection.guava-cache.refresh-thread-pool-size",
+      "type": "java.lang.Integer",
+      "description": "guava自动刷新缓存的线程数量",
+      "sourceType": "com.github.wzclouds.injection.properties.InjectionProperties$GuavaCache",
+      "defaultValue": 10
+    },
+    {
+      "name": "wzclouds.injection.guava-cache.refresh-write-time",
+      "type": "java.lang.Integer",
+      "description": "guava更新缓存的下一次时间,分钟",
+      "sourceType": "com.github.wzclouds.injection.properties.InjectionProperties$GuavaCache",
+      "defaultValue": 10
+    },
+    {
+      "name": "wzclouds.injection.max-depth",
+      "type": "java.lang.Integer",
+      "description": "递归最大深度",
+      "sourceType": "com.github.wzclouds.injection.properties.InjectionProperties",
+      "defaultValue": 3
+    }
+  ],
+  "hints": []
+}

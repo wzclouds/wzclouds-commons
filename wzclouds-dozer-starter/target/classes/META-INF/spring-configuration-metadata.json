@@ -1,0 +1,21 @@
+{
+  "groups": [
+    {
+      "name": "dozer",
+      "type": "com.github.wzclouds.dozer.DozerProperties",
+      "sourceType": "com.github.wzclouds.dozer.DozerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "dozer.mapping-files",
+      "type": "java.lang.String[]",
+      "description": "Mapping files configuration. For example \"classpath:*.dozer.xml\".",
+      "sourceType": "com.github.wzclouds.dozer.DozerProperties",
+      "defaultValue": [
+        "classpath*:dozer\/*.dozer.xml"
+      ]
+    }
+  ],
+  "hints": []
+}

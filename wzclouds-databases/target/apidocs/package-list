@@ -1,0 +1,15 @@
+com.github.wzclouds.database.datasource
+com.github.wzclouds.database.datasource.defaults
+com.github.wzclouds.database.dynamic.processor
+com.github.wzclouds.database.injector
+com.github.wzclouds.database.injector.method
+com.github.wzclouds.database.mybatis
+com.github.wzclouds.database.mybatis.auth
+com.github.wzclouds.database.mybatis.conditions
+com.github.wzclouds.database.mybatis.conditions.query
+com.github.wzclouds.database.mybatis.conditions.update
+com.github.wzclouds.database.mybatis.typehandler
+com.github.wzclouds.database.p6spy
+com.github.wzclouds.database.parsers
+com.github.wzclouds.database.plugins
+com.github.wzclouds.database.properties

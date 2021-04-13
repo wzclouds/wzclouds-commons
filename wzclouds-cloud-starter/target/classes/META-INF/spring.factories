@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.github.wzclouds.cloud.OpenFeignAutoConfiguration , \
+    com.github.wzclouds.cloud.RibbonMetaFilterAutoConfiguration, \
+    com.github.wzclouds.cloud.RestTemplateConfiguration, \
+    org.springframework.cloud.openfeign.EnhanceOpenFeignAutoConfiguration
+

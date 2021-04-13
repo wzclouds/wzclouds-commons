@@ -1,0 +1,11 @@
+com.github.wzclouds.base
+com.github.wzclouds.base.controller
+com.github.wzclouds.base.mapper
+com.github.wzclouds.base.request
+com.github.wzclouds.base.service
+com.github.wzclouds.boot.config
+com.github.wzclouds.boot.handler
+com.github.wzclouds.boot.interceptor
+com.github.wzclouds.boot.undertow
+com.github.wzclouds.boot.utils
+com.github.wzclouds.utils

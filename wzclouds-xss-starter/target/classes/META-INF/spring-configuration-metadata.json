@@ -1,0 +1,41 @@
+{
+  "groups": [
+    {
+      "name": "wzclouds.xss",
+      "type": "com.github.wzclouds.xss.properties.XssProperties",
+      "sourceType": "com.github.wzclouds.xss.properties.XssProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wzclouds.xss.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.wzclouds.xss.properties.XssProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "wzclouds.xss.ignore-param-values",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.github.wzclouds.xss.properties.XssProperties",
+      "defaultValue": "noxss"
+    },
+    {
+      "name": "wzclouds.xss.ignore-paths",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.github.wzclouds.xss.properties.XssProperties"
+    },
+    {
+      "name": "wzclouds.xss.order",
+      "type": "java.lang.Integer",
+      "sourceType": "com.github.wzclouds.xss.properties.XssProperties",
+      "defaultValue": 1
+    },
+    {
+      "name": "wzclouds.xss.patterns",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.github.wzclouds.xss.properties.XssProperties",
+      "defaultValue": "\/*"
+    }
+  ],
+  "hints": []
+}

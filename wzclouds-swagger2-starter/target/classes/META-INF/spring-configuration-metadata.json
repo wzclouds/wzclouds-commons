@@ -1,0 +1,227 @@
+{
+  "groups": [
+    {
+      "name": "wzclouds.swagger",
+      "type": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties"
+    },
+    {
+      "name": "wzclouds.swagger.authorization",
+      "type": "com.github.wzclouds.swagger2.SwaggerProperties$Authorization",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties"
+    },
+    {
+      "name": "wzclouds.swagger.basic",
+      "type": "com.github.wzclouds.swagger2.SwaggerProperties$Basic",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties"
+    },
+    {
+      "name": "wzclouds.swagger.contact",
+      "type": "com.github.wzclouds.swagger2.SwaggerProperties$Contact",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties"
+    },
+    {
+      "name": "wzclouds.swagger.markdown",
+      "type": "com.github.wzclouds.swagger2.SwaggerProperties$Markdown",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wzclouds.swagger.api-keys",
+      "type": "java.util.List<com.github.wzclouds.swagger2.SwaggerProperties$ApiKey>",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties"
+    },
+    {
+      "name": "wzclouds.swagger.authorization.auth-regex",
+      "type": "java.lang.String",
+      "description": "需要开启鉴权URL的正则",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Authorization",
+      "defaultValue": "^.*$"
+    },
+    {
+      "name": "wzclouds.swagger.authorization.authorization-scope-list",
+      "type": "java.util.List<com.github.wzclouds.swagger2.SwaggerProperties$AuthorizationScope>",
+      "description": "鉴权作用域列表",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Authorization"
+    },
+    {
+      "name": "wzclouds.swagger.authorization.name",
+      "type": "java.lang.String",
+      "description": "鉴权策略ID，需要和SecurityReferences ID保持一致",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Authorization",
+      "defaultValue": ""
+    },
+    {
+      "name": "wzclouds.swagger.authorization.token-url-list",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Authorization"
+    },
+    {
+      "name": "wzclouds.swagger.base-package",
+      "type": "java.lang.String",
+      "description": "swagger会解析的包路径",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": "com.github.wzclouds"
+    },
+    {
+      "name": "wzclouds.swagger.base-path",
+      "type": "java.lang.String",
+      "description": "扩展swagger 基础路径",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": "\/"
+    },
+    {
+      "name": "wzclouds.swagger.basic.enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Basic",
+      "defaultValue": false
+    },
+    {
+      "name": "wzclouds.swagger.basic.password",
+      "type": "java.lang.String",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Basic",
+      "defaultValue": "wzclouds"
+    },
+    {
+      "name": "wzclouds.swagger.basic.username",
+      "type": "java.lang.String",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Basic",
+      "defaultValue": "wzclouds"
+    },
+    {
+      "name": "wzclouds.swagger.contact.email",
+      "type": "java.lang.String",
+      "description": "联系人email",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Contact",
+      "defaultValue": ""
+    },
+    {
+      "name": "wzclouds.swagger.contact.name",
+      "type": "java.lang.String",
+      "description": "联系人",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Contact",
+      "defaultValue": ""
+    },
+    {
+      "name": "wzclouds.swagger.contact.url",
+      "type": "java.lang.String",
+      "description": "联系人url",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Contact",
+      "defaultValue": ""
+    },
+    {
+      "name": "wzclouds.swagger.description",
+      "type": "java.lang.String",
+      "description": "描述",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": "wzclouds-backend 在线文档"
+    },
+    {
+      "name": "wzclouds.swagger.docket",
+      "type": "java.util.Map<java.lang.String,com.github.wzclouds.swagger2.SwaggerProperties$DocketInfo>",
+      "description": "分组文档",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties"
+    },
+    {
+      "name": "wzclouds.swagger.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否开启swagger",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "wzclouds.swagger.exclude-path",
+      "type": "java.util.List<java.lang.String>",
+      "description": "在includePath基础上需要排除的url规则",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties"
+    },
+    {
+      "name": "wzclouds.swagger.global-operation-parameters",
+      "type": "java.util.List<com.github.wzclouds.swagger2.SwaggerProperties$GlobalOperationParameter>",
+      "description": "全局参数配置",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties"
+    },
+    {
+      "name": "wzclouds.swagger.group",
+      "type": "java.lang.String",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "wzclouds.swagger.host",
+      "type": "java.lang.String",
+      "description": "host信息",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "wzclouds.swagger.include-path",
+      "type": "java.util.List<java.lang.String>",
+      "description": "swagger会解析的url规则",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties"
+    },
+    {
+      "name": "wzclouds.swagger.license",
+      "type": "java.lang.String",
+      "description": "许可证",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "wzclouds.swagger.license-url",
+      "type": "java.lang.String",
+      "description": "许可证URL",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "wzclouds.swagger.markdown.base-path",
+      "type": "java.lang.String",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Markdown",
+      "defaultValue": "classpath:markdown\/*"
+    },
+    {
+      "name": "wzclouds.swagger.markdown.enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties$Markdown",
+      "defaultValue": false
+    },
+    {
+      "name": "wzclouds.swagger.order",
+      "type": "java.lang.Integer",
+      "description": "排序",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": 1
+    },
+    {
+      "name": "wzclouds.swagger.production",
+      "type": "java.lang.Boolean",
+      "description": "是否生产环境",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "wzclouds.swagger.terms-of-service-url",
+      "type": "java.lang.String",
+      "description": "服务条款URL",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "wzclouds.swagger.title",
+      "type": "java.lang.String",
+      "description": "标题",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": "在线文档"
+    },
+    {
+      "name": "wzclouds.swagger.version",
+      "type": "java.lang.String",
+      "description": "版本",
+      "sourceType": "com.github.wzclouds.swagger2.SwaggerProperties",
+      "defaultValue": "1.0"
+    }
+  ],
+  "hints": []
+}

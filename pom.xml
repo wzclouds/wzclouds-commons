@@ -22,6 +22,10 @@
 		<module>wzclouds-j2cache-starter</module>
 		<module>wzclouds-cloud-starter</module>
 		<module>wzclouds-swagger2-starter</module>
+		<module>wzclouds-injection-starter</module>
+		<module>wzclouds-security-starter</module>
+		<module>wzclouds-validator-starter</module>
+		<module>wzclouds-xss-starter</module>
 	</modules>
 
 	<properties>

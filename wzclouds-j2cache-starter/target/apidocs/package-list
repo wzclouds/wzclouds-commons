@@ -1,0 +1,5 @@
+com.github.wzclouds.j2cache
+net.oschina.j2cache.autoconfigure
+net.oschina.j2cache.cache.support
+net.oschina.j2cache.cache.support.redis
+net.oschina.j2cache.cache.support.util

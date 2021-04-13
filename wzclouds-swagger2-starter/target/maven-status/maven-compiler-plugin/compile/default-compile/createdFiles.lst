@@ -1,0 +1,15 @@
+com\github\wzclouds\swagger2\SwaggerProperties$AllowableValues.class
+com\github\wzclouds\swagger2\SwaggerProperties$AuthorizationScope.class
+com\github\wzclouds\swagger2\SwaggerProperties$Markdown.class
+com\github\wzclouds\swagger2\Swagger2Configuration.class
+META-INF\spring-configuration-metadata.json
+com\github\wzclouds\swagger2\SwaggerWebMvcConfigurer.class
+com\github\wzclouds\swagger2\SwaggerProperties.class
+com\github\wzclouds\swagger2\SwaggerProperties$Contact.class
+com\github\wzclouds\swagger2\ExtRelativePathProvider.class
+com\github\wzclouds\swagger2\SwaggerProperties$ApiKey.class
+com\github\wzclouds\swagger2\SwaggerProperties$Authorization.class
+com\github\wzclouds\swagger2\SwaggerProperties$DocketInfo.class
+com\github\wzclouds\swagger2\SwaggerProperties$Basic.class
+com\github\wzclouds\swagger2\SwaggerAutoConfiguration.class
+com\github\wzclouds\swagger2\SwaggerProperties$GlobalOperationParameter.class

@@ -1,0 +1,25 @@
+{
+  "groups": [
+    {
+      "name": "wzclouds.log",
+      "type": "com.github.wzclouds.log.properties.OptLogProperties",
+      "sourceType": "com.github.wzclouds.log.properties.OptLogProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wzclouds.log.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用",
+      "sourceType": "com.github.wzclouds.log.properties.OptLogProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "wzclouds.log.type",
+      "type": "com.github.wzclouds.log.properties.OptLogType",
+      "description": "日志存储类型",
+      "sourceType": "com.github.wzclouds.log.properties.OptLogProperties"
+    }
+  ],
+  "hints": []
+}

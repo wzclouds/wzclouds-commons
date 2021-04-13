@@ -1,0 +1,13 @@
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\com\github\wzclouds\cloud\RestTemplateConfiguration.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\org\springframework\cloud\openfeign\GlobalFallbackFactoryProxy.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\com\github\wzclouds\cloud\feign\DateFormatRegister.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\com\github\wzclouds\cloud\http\RestTemplateHeaderInterceptor.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\com\github\wzclouds\cloud\RibbonMetaFilterAutoConfiguration.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\com\github\wzclouds\cloud\ribbon\GrayRule.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\com\github\wzclouds\cloud\OpenFeignAutoConfiguration.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\com\github\wzclouds\cloud\hystrix\ThreadLocalHystrixConcurrencyStrategy.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\org\springframework\cloud\openfeign\EnhanceOpenFeignAutoConfiguration.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\com\github\wzclouds\cloud\http\InfoSlf4jFeignLogger.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\com\github\wzclouds\cloud\http\InfoFeignLoggerFactory.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\org\springframework\cloud\openfeign\GlobalHystrixTargeter.java
+E:\myworkspace\wz-clouds\wzclouds-commons\wzclouds-cloud-starter\src\main\java\com\github\wzclouds\cloud\interceptor\FeignAddHeaderRequestInterceptor.java

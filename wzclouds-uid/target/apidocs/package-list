@@ -1,0 +1,9 @@
+com.baidu.fsg.uid
+com.baidu.fsg.uid.buffer
+com.baidu.fsg.uid.exception
+com.baidu.fsg.uid.impl
+com.baidu.fsg.uid.utils
+com.baidu.fsg.uid.worker
+com.baidu.fsg.uid.worker.entity
+com.github.wzclouds.uid.dao
+com.github.wzclouds.uid.service

@@ -1,0 +1,227 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.druid",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.github.wzclouds.database.datasource.defaults.MasterDatabaseConfiguration",
+      "sourceMethod": "druidDataSource()"
+    },
+    {
+      "name": "wzclouds.database",
+      "type": "com.github.wzclouds.database.properties.DatabaseProperties",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties"
+    },
+    {
+      "name": "wzclouds.database.cache-id",
+      "type": "com.github.wzclouds.database.properties.DatabaseProperties$CacheId",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties"
+    },
+    {
+      "name": "wzclouds.database.default-id",
+      "type": "com.github.wzclouds.database.properties.DatabaseProperties$DefaultId",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties"
+    },
+    {
+      "name": "wzclouds.database.hutool-id",
+      "type": "com.github.wzclouds.database.properties.DatabaseProperties$HutoolId",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wzclouds.database.cache-id.boost-power",
+      "type": "java.lang.Integer",
+      "description": "RingBuffer size扩容参数, 可提高UID生成的吞吐量. 默认:3， 原bufferSize=8192, 扩容后bufferSize= 8192 << 3 = 65536",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$CacheId",
+      "defaultValue": 3
+    },
+    {
+      "name": "wzclouds.database.cache-id.epoch-str",
+      "type": "java.lang.String",
+      "description": "Customer epoch, unit as second. For example 2016-05-20 (ms: 1463673600000) 可以改成你的项目开始开始的时间",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$CacheId",
+      "defaultValue": "2020-09-15"
+    },
+    {
+      "name": "wzclouds.database.cache-id.padding-factor",
+      "type": "java.lang.Integer",
+      "description": "指定何时向RingBuffer中填充UID, 取值为百分比(0, 100), 默认为50 举例: bufferSize=1024, paddingFactor=50 -> threshold=1024 * 50 \/ 100 = 512. 当环上可用UID数量 < 512时, 将自动对RingBuffer进行填充补全",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$CacheId"
+    },
+    {
+      "name": "wzclouds.database.cache-id.rejected-put-buffer-handler-class",
+      "type": "java.lang.Class<? extends com.baidu.fsg.uid.buffer.RejectedPutBufferHandler>",
+      "description": "拒绝策略: 当环已满, 无法继续填充时 默认无需指定, 将丢弃Put操作, 仅日志记录. 如有特殊需求, 请实现RejectedPutBufferHandler接口(支持Lambda表达式)",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$CacheId"
+    },
+    {
+      "name": "wzclouds.database.cache-id.rejected-take-buffer-handler-class",
+      "type": "java.lang.Class<? extends com.baidu.fsg.uid.buffer.RejectedTakeBufferHandler>",
+      "description": "拒绝策略: 当环已空, 无法继续获取时 默认无需指定, 将记录日志, 并抛出UidGenerateException异常. 如有特殊需求, 请实现RejectedTakeBufferHandler接口(支持Lambda表达式)",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$CacheId"
+    },
+    {
+      "name": "wzclouds.database.cache-id.schedule-interval",
+      "type": "java.lang.Long",
+      "description": "另外一种RingBuffer填充时机, 在Schedule线程中, 周期性检查填充 默认:不配置此项, 即不实用Schedule线程. 如需使用, 请指定Schedule线程时间间隔, 单位:秒",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$CacheId"
+    },
+    {
+      "name": "wzclouds.database.cache-id.seq-bits",
+      "type": "java.lang.Integer",
+      "description": "每秒下的并发序列，13 bits可支持每秒8192个并发，即2^13个并发 9: 512 并发 13: 8192 并发",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$CacheId",
+      "defaultValue": 9
+    },
+    {
+      "name": "wzclouds.database.cache-id.time-bits",
+      "type": "java.lang.Integer",
+      "description": "当前时间，相对于时间基点\"${epochStr}\"的增量值，单位：秒， 28: 大概可以使用 8.7年, 28位即最大表示2^28的数值的秒数 30: 大概可以使用 34年, 30位即最大表示2^30的数值的秒数 31: 大概可以使用 68年, 31位即最大表示2^31的数值的秒数",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$CacheId",
+      "defaultValue": 31
+    },
+    {
+      "name": "wzclouds.database.cache-id.worker-bits",
+      "type": "java.lang.Integer",
+      "description": "机器id， <p> 20：100W次重启 22: 最多可支持约420w次机器启动。内置实现为在启动时由数据库分配。420w = 2^22 23：800w次重启  12次\/天 27: 1.3亿次重启 24*12次\/天",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$CacheId",
+      "defaultValue": 23
+    },
+    {
+      "name": "wzclouds.database.db-type",
+      "type": "com.baomidou.mybatisplus.annotation.DbType",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties"
+    },
+    {
+      "name": "wzclouds.database.default-id.epoch-str",
+      "type": "java.lang.String",
+      "description": "Customer epoch, unit as second. For example 2016-05-20 (ms: 1463673600000) 可以改成你的项目开始开始的时间",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$DefaultId",
+      "defaultValue": "2020-09-15"
+    },
+    {
+      "name": "wzclouds.database.default-id.seq-bits",
+      "type": "java.lang.Integer",
+      "description": "每秒下的并发序列，13 bits可支持每秒8192个并发，即2^13个并发 9: 512 并发 13: 8192 并发",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$DefaultId",
+      "defaultValue": 9
+    },
+    {
+      "name": "wzclouds.database.default-id.time-bits",
+      "type": "java.lang.Integer",
+      "description": "当前时间，相对于时间基点\"${epochStr}\"的增量值，单位：秒， 28: 大概可以使用 8.7年, 28位即最大表示2^28的数值的秒数 30: 大概可以使用 34年, 30位即最大表示2^30的数值的秒数 31: 大概可以使用 68年, 31位即最大表示2^31的数值的秒数",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$DefaultId",
+      "defaultValue": 31
+    },
+    {
+      "name": "wzclouds.database.default-id.worker-bits",
+      "type": "java.lang.Integer",
+      "description": "机器id， <p> 20：100W次重启 22: 最多可支持约420w次机器启动。内置实现为在启动时由数据库分配。420w = 2^22 23：800w次重启  12次\/天 27: 1.3亿次重启 24*12次\/天",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$DefaultId",
+      "defaultValue": 23
+    },
+    {
+      "name": "wzclouds.database.hutool-id.data-center-id",
+      "type": "java.lang.Long",
+      "description": "数据中心ID (0-31)   单机配置0 即可。 集群部署，根据情况每个实例自增即可。",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$HutoolId",
+      "defaultValue": 0
+    },
+    {
+      "name": "wzclouds.database.hutool-id.worker-id",
+      "type": "java.lang.Long",
+      "description": "终端ID (0-31)      单机配置0 即可。 集群部署，根据情况每个实例自增即可。",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties$HutoolId",
+      "defaultValue": 0
+    },
+    {
+      "name": "wzclouds.database.id-type",
+      "type": "com.github.wzclouds.database.properties.IdType",
+      "description": "id 类型",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties"
+    },
+    {
+      "name": "wzclouds.database.is-block-attack",
+      "type": "java.lang.Boolean",
+      "description": "是否启用 防止全表更新与删除插件 @return",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "wzclouds.database.is-data-scope",
+      "type": "java.lang.Boolean",
+      "description": "是否启用数据权限",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "wzclouds.database.is-illegal-sql",
+      "type": "java.lang.Boolean",
+      "description": "是否启用  sql性能规范插件",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "wzclouds.database.is-not-write",
+      "type": "java.lang.Boolean",
+      "description": "是否禁止写入",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "wzclouds.database.is-seata",
+      "type": "java.lang.Boolean",
+      "description": "是否启用 seata",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "wzclouds.database.limit",
+      "type": "java.lang.Long",
+      "description": "分页大小限制",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties",
+      "defaultValue": -1
+    },
+    {
+      "name": "wzclouds.database.multi-tenant-type",
+      "type": "com.github.wzclouds.database.properties.MultiTenantType",
+      "description": "多租户模式",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties"
+    },
+    {
+      "name": "wzclouds.database.tenant-database-prefix",
+      "type": "java.lang.String",
+      "description": "租户库 前缀",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties",
+      "defaultValue": "wzclouds_base"
+    },
+    {
+      "name": "wzclouds.database.tenant-id-column",
+      "type": "java.lang.String",
+      "description": "租户id 列名",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties",
+      "defaultValue": "tenant_code"
+    },
+    {
+      "name": "wzclouds.database.transaction-attribute-list",
+      "type": "java.util.List<java.lang.String>",
+      "description": "统一管理事务的方法名",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties"
+    },
+    {
+      "name": "wzclouds.database.transaction-scan-package",
+      "type": "java.lang.String",
+      "description": "事务扫描基础包",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties",
+      "defaultValue": "com.github.wzclouds"
+    },
+    {
+      "name": "wzclouds.database.tx-timeout",
+      "type": "java.lang.Integer",
+      "description": "事务超时时间",
+      "sourceType": "com.github.wzclouds.database.properties.DatabaseProperties",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}

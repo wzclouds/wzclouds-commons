@@ -1,0 +1,8 @@
+com\github\wzclouds\xss\wrapper\XssRequestWrapper.class
+com\github\wzclouds\xss\converter\XssStringJsonSerializer.class
+com\github\wzclouds\xss\properties\XssProperties.class
+com\github\wzclouds\xss\utils\XssUtils.class
+com\github\wzclouds\xss\converter\XssStringJsonDeserializer.class
+META-INF\spring-configuration-metadata.json
+com\github\wzclouds\xss\filter\XssFilter.class
+com\github\wzclouds\xss\XssAuthConfiguration.class

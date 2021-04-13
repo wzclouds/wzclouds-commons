@@ -1,0 +1,8 @@
+com.github.wzclouds.security.annotation
+com.github.wzclouds.security.aspect
+com.github.wzclouds.security.config
+com.github.wzclouds.security.constant
+com.github.wzclouds.security.feign
+com.github.wzclouds.security.model
+com.github.wzclouds.security.properties
+com.github.wzclouds.security.resolver
